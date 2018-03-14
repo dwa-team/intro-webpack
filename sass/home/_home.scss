@@ -1,0 +1,37 @@
+
+.imageAgumon {
+  @extend .sprite_1-agumon;
+  background-color: transparent;
+}
+
+.imageGreymon {
+  @extend .sprite_1-greymon;
+  background-color: blue;
+}
+
+.leftCont {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 2;
+  position: relative;
+}
+
+.rightCont {
+  width: 58%;
+  display: inline-block;
+  background: grey;
+  vertical-align: top;
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 140px;
+      background: red;
+      margin: 13px;
+    }
+  }
+}
+
