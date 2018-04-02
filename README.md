@@ -1,33 +1,21 @@
-## CSS, COMPASS and SASS
-
-This exaple shows how to integrate Compass and Sass on a basic html-css-js project. 
-
--
-
-
 ## Webpack
-
 ### Requirements
-	- Node.js: `node --version`
+
+- Node.js: `node --version`
 
 ### Installation
-	- to see all versions of webpack: `npm view webpack versions --json`
-	- to install webpack: `npm install webpack`
-		- add as DevDependency: `-D`
-		- add as globally: `-g`
+- Create package.json on yor project root `npm init --yes`
+
+- -> Install webpack locally `npm install --save-dev webpack`
+- Install webpack globally `npm install -g webpack`
+
+- -> Install webpack-cli locally: `npm install --save-dev webpack-cli`
+- Install webpack-cli: `npm install -g webpack-cli`
+
+- If needed, install webpack-dev-server  `npm install -g webpack-dev-server`
 
 ### Usefull Commands
-    - create package.json `npm init --yes`
-    - to transform a file: `webpack .src/input.js ./dist/output.js`
-        - to watch changes: `--watch` or `-d`
-        - to build for production: `-p`
-    - to import a file: `require("./miFile.js")`
-    - install and require modules, fuctions , and so on
-    - install loaders: `npm install css-loader style-loader --save-dev`
-    - creatie configuration file: `webpack.config.js` y ejecutar: `webpack`
-    - define content
-    - install webpack-dev-server: `npm install webpack-dev-server --save-dev`
-    - set package.json
-    - install babel: `npm install babel-core babel-loader babel-preset-es2015 --save-dev`
-
-
+- See error details: `webpack --display-error-details`
+- Transform a file on dev mode: `npx webpack src/app.js --output dist/bundle.js -d`
+- Transform a file on production mode: `npx webpack src/index.js --output dist/bundle.js -p`
+- Add webpack-cli dependencies on package.json: `webpack-cli init`
